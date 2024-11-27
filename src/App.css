@@ -1,0 +1,178 @@
+body {
+
+  font-family: 'Roboto', sans-serif;
+  background: linear-gradient(to right, #000000, #001f3f);
+}
+  
+
+.card {
+  border-radius: 12px;
+  border: none;
+}
+
+.card h2 {
+  font-weight: bold;
+}
+
+.btn {
+  border-radius: 8px;
+}
+
+.form-control {
+  border-radius: 8px;
+  height: 45px;
+}
+
+/* Auth.css */
+
+/* Gradient background with animation */
+.auth-container {
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* Card styling with subtle animations */
+.auth-card {
+  background: #f8f9fa;
+  width: 100%;
+  max-width: 400px;
+  border-radius: 15px;
+  animation: scaleUp 0.8s ease;
+}
+
+.auth-card h2 {
+  animation: textSlideIn 1s ease;
+}
+
+/* Input field focus styles */
+.form-control:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}
+
+@keyframes scaleUp {
+  from {
+      transform: scale(0.9);
+  }
+  to {
+      transform: scale(1);
+  }
+}
+
+@keyframes textSlideIn {
+  from {
+      transform: translateY(-20px);
+      opacity: 0;
+  }
+  to {
+      transform: translateY(0);
+      opacity: 1;
+  }
+}
+
+
+/* Home.css */
+/* Home.css */
+
+/* Gradient background: Black to Navy Blue */
+.home-container {
+  min-height: 100vh;
+  background: linear-gradient(to right, #000000, #001f3f);
+  color: #fff;
+}
+
+/* Styling for the card container */
+.home-card {
+  background: #1a1a1a; /* Dark gray background */
+  color: #ffffff;     /* White text for better contrast */
+  max-width: 600px;
+  border: 1px solid #333; /* Subtle border for a cleaner look */
+  animation: fadeIn 1s ease-in-out;
+  word-wrap: break-word; /* Ensures email or long text does not overflow */
+}
+
+/* Heading styles */
+.home-card h1 {
+  color: #f8f9fa; /* Light white for standout text */
+}
+
+/* Paragraph styles */
+.home-card p {
+  line-height: 1.6;
+  color: #dcdcdc; /* Soft white for readability */
+}
+
+/* Button group and hover effects */
+.button-group .btn-primary {
+  background-color: #0056b3; /* Navy Blue */
+  border-color: #0056b3;
+  transition: all 0.3s ease;
+}
+
+.button-group .btn-primary:hover {
+  background-color: #004494;
+  border-color: #004494;
+}
+
+.button-group .btn-outline-light {
+  color: #ffffff;
+  border-color: #ffffff;
+  transition: all 0.3s ease;
+}
+
+.button-group .btn-outline-light:hover {
+  background-color: #ffffff;
+  color: #000000;
+  border-color: #ffffff;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+      transform: scale(0.9);
+  }
+  to {
+      opacity: 1;
+      transform: scale(1);
+  }
+}
+
+/* src/App.css */
+/* Custom Navbar Styling */
+/* Custom Navbar Styling */
+.custom-navbar {
+  background: linear-gradient(to right, #000000, #001f3f); /* Gradient from black to dark blue */
+}
+
+.navbar .navbar-brand {
+  color: white; /* Set brand text color to white */
+  font-weight: bold;
+}
+
+.navbar .nav-link {
+  color: white !important; /* Ensure nav link text color is white */
+}
+
+.navbar .nav-link:hover {
+  color: #f8f9fa; /* Slightly off-white for hover effect */
+}
+
+.navbar .nav-link.active {
+  font-weight: bold; /* Make active link bold */
+}
+
+/* Optional: Navbar collapsed styling for smaller screens */
+.navbar-toggler-icon {
+  background-color: white; /* Ensure the toggle icon is visible on dark background */
+}
+
